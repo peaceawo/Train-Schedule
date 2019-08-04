@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8">
+        <title>Train Schedule</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Assests/css/style.css">
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+      
+</head>
+<body>
+    <nav class="col-12">
+        <img src="Assests/img/SignCTA.jpg" width="110" height="100">
+        <p class="">Welcome to Chicago Transit Authority Buses & Trains Services</p>
+            
+    </nav>
+    <br>
+
+    <div class="row col-12">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header text-center"> Add A Train</div>
+                <div class="card-body text-center">
+                                <!-- Add train -->
+                    <form role="form">
+                                
+                        <div class="form-group row">
+                            <label for="name-input">Train Name:</label>
+                            <input class="form-control" id="name-input" type="text">
+                        </div>
+                
+                        <div class="form-group row">
+                            <label for="rolw-input">Destination:</label>
+                            <input class="form-control" id="destination-input" type="text">
+                        </div>
+                
+                        <div class="form-group row">
+                            <label for="date-input">Departure (HH:MM)</label>
+                            <input class="form-control" id="departure-input" type="text">
+                        </div>
+                
+                        <div class="form-group row">
+                            <label for="rate-input">Frequency</label>
+                            <input class="form-control" id="frequency-input" type="">
+                        </div>
+                
+                                    
+                    </form>
+                    <button class="btn" id="add-train" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+
+        </div>
+
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header text-center">Train Schedule</div>
+                    <div class="card-body text-center">
+                        <table class="table table-sm table-hover" id='train-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col-xs-3">Train Name</th>
+                                    <th scope="col-xs-2">Destination</th>
+                                    <th scope="col-xs-2">Frequency</th>
+                                    <th scope="col-xs-2">Next Arrival</th>
+                                    <th scope="col-xs-2">Minutes Away</th>
+                                   
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+     <!-- Firebase References -->
+     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+     <!-- Moment.js Reference -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+     <!-- Moment.js Reference -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!-- train.js Reference -->
+     <script src="Assests/javascript/train.js"></script>
+
+</body>

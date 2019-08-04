@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/skyline4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 120px;
+    background-color: #0005;
+    position: relative;
+ 
+}
+nav p{
+    float: right;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: 'Grenze', serif;
+    line-height: 15vh;
+    animation: animate 8s linear infinite;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color:white;
+    -webkit-text-fill-color: transparent;
+    
+}
+@keyframes animate {
+     0%{
+        transform: translateX(0%);
+        }
+        100%{
+        transform: translateX(-30%);
+        }
+}
+img{
+    clear: both;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.btn{
+    border: solid #059585 2px;
+}
+.btn:hover{
+    background: wheat;
+}
